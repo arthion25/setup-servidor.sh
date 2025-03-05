@@ -39,6 +39,10 @@ sudo systemctl start fail2ban
 echo "Instalando htop..."
 sudo apt-get install -y htop
 
+# Instalar net-tools
+echo "Instalando net-tools..."
+sudo apt install -y net-tools
+
 # Mostrar estado final del firewall
 echo "=============================="
 echo "Estado actual del firewall (UFW):"
