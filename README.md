@@ -25,5 +25,8 @@ Si querés ejecutarlo directo desde GitHub, sin guardarlo, podés usar:
 ```bash
 curl -s https://raw.githubusercontent.com/arthion25/setup-servidor.sh/main/setup-servidor.sh | sudo bash
 ```
-
-
+si te sale el mensaje de que no esta instalado curl
+```bash
+No se ha encontrado la orden «curl», pero se puede instalar con:
+snap install curl 
+```
