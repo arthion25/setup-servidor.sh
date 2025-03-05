@@ -39,6 +39,22 @@ sudo systemctl start fail2ban
 echo "Instalando htop..."
 sudo apt-get install -y htop
 
-# Mostrar resumen final
+# Mostrar estado final del firewall
+echo "=============================="
+echo "Estado actual del firewall (UFW):"
+sudo ufw status
+echo "=============================="
+
+# Mostrar estado de Fail2Ban
+echo "Estado de fail2ban:"
+sudo systemctl status fail2ban --no-pager
+
+# Mostrar estado de SSH
+echo "Estado del servicio SSH:"
+sudo systemctl status ssh --no-pager
+
+# Mostrar mensaje final
+echo "=============================="
 echo "Configuración completada."
 echo "La IP permitida para acceso remoto es: $MI_IP"
+echo "=============================="
