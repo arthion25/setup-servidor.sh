@@ -25,7 +25,7 @@ sudo ./setup-servidor.sh
 ```bash
 curl -s https://raw.githubusercontent.com/arthion25/setup-servidor.sh/main/setup-servidor.sh | sudo bash
 ```
-### si te sale el mensaje de que no esta instalado curl
+### si te aparece el mensaje de que no esta instalado curl
 
 ```bash
 No se ha encontrado la orden «curl», pero se puede instalar con:
