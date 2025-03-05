@@ -13,14 +13,16 @@ sudo apt-get install -y openssh-server
 sudo systemctl enable ssh
 sudo systemctl start ssh
 
+# Pedir al usuario la IP permitida para el firewall
+read -p "Ingresá la IP que tendrá acceso SSH, HTTP y HTTPS: " MI_IP
+
 # Instalar UFW (Firewall) y configurar reglas
 echo "Configurando Firewall UFW..."
 sudo apt-get install -y ufw
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
-# Permitir SSH, HTTP y HTTPS solo desde tu IP
-MI_IP="192.168.1.60"
+# Permitir SSH, HTTP y HTTPS solo desde la IP ingresada
 echo "Permitiendo acceso desde $MI_IP..."
 sudo ufw allow from $MI_IP to any port 22
 sudo ufw allow from $MI_IP to any port 80
@@ -37,8 +39,6 @@ sudo systemctl start fail2ban
 echo "Instalando htop..."
 sudo apt-get install -y htop
 
-
 # Mostrar resumen final
 echo "Configuración completada."
-#echo "Recordá conectarte con: ssh linux@tu-servidor"
-echo "Tu IP permitida es: $MI_IP"
+echo "La IP permitida para acceso remoto es: $MI_IP"
