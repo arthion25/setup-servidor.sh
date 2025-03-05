@@ -23,7 +23,7 @@ sudo ./setup-servidor.sh
 ### Si querés ejecutarlo directo desde GitHub, sin guardarlo, podés usar:
 
 ```bash
-curl -s https://raw.githubusercontent.com/arthion25/setup-servidor.sh/main/setup-servidor.sh | sudo bash
+
 ```
 ### si te aparece el mensaje de que no esta instalado curl
 
