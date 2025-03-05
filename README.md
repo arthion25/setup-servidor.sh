@@ -31,3 +31,5 @@ curl -s https://raw.githubusercontent.com/arthion25/setup-servidor.sh/main/setup
 No se ha encontrado la orden «curl», pero se puede instalar con:
 snap install curl 
 ```
+
+### para AltGr + la tecla 1   para lograr " | " o tab + el bton que esta al lado del 1 
